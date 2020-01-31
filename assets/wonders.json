@@ -1,0 +1,40 @@
+{
+  "wonders": [
+    { "name": "Temple of Artemis",
+      "latitude" : 37.9495785,
+      "longitude" : 27.3639125
+    },
+    {
+      "name": "Lighthouse of Alexandria",
+        "latitude" : 31.2240346,
+        "longitude" : 29.8144559
+    },
+    {
+      "name": "Statue of Zeus",
+        "latitude" : 37.637861,
+        "longitude" : 21.630000
+    },
+    {
+      "name": "Great Pyramid of Giza",
+        "latitude" : 29.9792345,
+        "longitude" : 31.1320079
+    },
+    {
+      "name": "Hanging Gardens of Babylon",
+        "latitude" : 33.1269317,
+        "longitude" : 43.0182837
+    },
+    {
+      "name": "Mausoleum of Halicarnassus",
+        "latitude" : 37.0378874,
+        "longitude" : 27.4219224
+    },
+    {
+      "name": "Colossus of Rhodes",
+        "latitude" : 36.4510442,
+        "longitude" : 28.2240478
+    }
+
+  ]
+
+}

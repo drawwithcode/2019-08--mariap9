@@ -4,13 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
     <style> body {padding: 0; margin: 0;} </style>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js'></script>
+   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
+   <style>
+     body {
+       margin: 0;
+       padding: 0;
+     }
+
+     #map {
+       position: absolute;
+       top: 0;
+       bottom: 0;
+       width: 100%;
+     }
+   </style>
     <script src="p5.min.js"></script>
-    <script src="p5.sound.min.js"></script>
-    <script src="p5.geolocation-master/p5.geolocation.js"></script>
-    <script src="Mappa-master/dist/mappa.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
+    <script src="addons/p5.geolocation.js"></script>
+    <script src="https://unpkg.com/mappa-mundi/dist/mappa.js" type="text/javascript"></script>
+    <script src="addons/p5.sound.min.js"></script>
     <script src="sketch.js"></script>
   </head>
   <body>
+    <div id='map'></div>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaWFwOTI1IiwiYSI6ImNrMnVrNGN5ajExNTMzYm56dDJ3b2JyaDIifQ.G5Wzsmz_LCuwx7Y6DOBOlQ'; // replace this with your access token
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mariap925/cjt6c16h10jst1fmkxv9xw2y5', // replace this with your style URL
+      center: [-87.661557, 41.893748],
+      zoom: 10.7
+    });
+    </script>
   </body>
 </html>
