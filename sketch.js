@@ -6,7 +6,6 @@ var tLat = 34.169701;
 var tLon = 28.311039;
 
 var mappa = new Mappa("Mapbox", "pk.eyJ1IjoibWFyaWFwOTI1IiwiYSI6ImNrMnVrNGN5ajExNTMzYm56dDJ3b2JyaDIifQ.G5Wzsmz_LCuwx7Y6DOBOlQ");
-
 var options = {
   lat: tLat,
   lng: tLon,
@@ -27,16 +26,14 @@ function setup() {
   myMap = mappa.tileMap(options);
   myMap.overlay(canvas);
   console.log(data);
-
-
 }
+
 
 function draw() {
   clear();
 
   // get my current Position
   push();
-
   var me = myMap.latLngToPixel(myLoc.latitude, myLoc.longitude);
   noStroke();
   fill(138, 66, 245, 60);
